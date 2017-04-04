@@ -1,0 +1,97 @@
+<html>
+<head>
+<meta charset='utf-8'  content='width=device-width; initial-scale=1.0'   />
+    
+<script type='text/javascript'  src='../js/jquery.js'  ></script>
+<script type='text/javascript' src='../js/traverse.js'></script>
+    <style type='text/css' rel='stylesheet' >
+        .r{
+            border:solid thin grey;
+            width:25px;
+            height:25px;
+            display:inline-flex;
+            margin:5px;
+        }
+        img{width:200px;
+           height:100px;
+            display:none;
+        }
+        .images{
+            margin-left:20%;
+            display:inline-flex;
+        }
+        
+        @keyframes slideAway{
+            0%{transform:translateX(0px);
+                opacity:1;}
+            100%{
+                transform:translateX(-700px);
+                opacity:0;}
+              
+        }
+        
+        @keyframes slideCome{
+            0%{transform:translateX(700px);
+                opacity:0;
+            }
+            100%{
+                transform:translateX(0px);
+                opacity:1;
+            }
+        }
+        
+        .animate{
+            animation-name:slideAway;
+            animation-duration:1s;
+            animation-fill-mode:forwards;
+            animation-delay:1s;
+        }
+        .into{
+            animation-name:slideCome;
+            animation-duration:1s;
+            animation-fill-mode:forwards;
+        }
+        .traversal{
+            margin-left:20%;
+        }
+        .btn{
+            width:50px;
+            height:20px;
+            background-color:aquamarine;
+            cursor:pointer;
+            
+        }
+        
+    </style>
+    
+</head>
+    <body>
+        
+    <div class='traversal'>
+    <img src='' alt='main' />
+    <div class='source animat'>
+    <li>1.jpg</li>  
+    <li>2.jpg</li>
+    <li>3.jpg</li>
+    </div>
+    </div>
+    <div class='tr'>
+    <div class='r'>        
+    </div>    
+    <div class='r'>
+    </div>
+    <div class='r  h'>
+    </div>
+    </div>
+    <div class='images'>
+    <img src='1.jpg' alt='1'  />
+    <img src='2.jpg' alt='2'  />
+    <img src='3.jpg'  alt='3' />
+        
+    </div>
+        
+        <div class='btn btn-primary'>Vibrate</div>
+    </body>
+
+
+</html>
